@@ -1,0 +1,93 @@
+﻿信息系统与数据库技术练习8答题卡
+
+班级：   19信管 1班
+姓名：     张舒倩
+学号：     20190307137
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.USE  EDUC
+
+
+
+2.SELECT *
+
+FROM Course
+
+WHERE   Cname    IS NULL
+
+3.SELECT *
+
+FROM  SC
+
+WHER SCscore ='不及格’OR SCscore!<80
+
+
+
+
+
+
+4.SELECT *
+FROM sc
+WHERE  Cid = A00401 AND SCscore>=80
+
+
+
+
+5.SELECT *
+FROM  Student
+WHERE  DATEDIFF (YY,   Birth GETDATE()))<=26 AND Sex='女'
+
+
+
+6.SELECT  Sid，Cid，SCscore
+FROM SC
+WHERE SCscore BETWEEN 80  AND 90
+
+7.SELECT * 
+FROM Course
+WHERE  Cid IN ('A00101','A00201','B00101')
+
+
+
+8. SELECT * 
+FROM  Course
+WHERE Cid  NOT  IN ('A00101','A00201','B00101')
+ 
+
+9.SELECT *
+FROM Student
+WHERE Sname  LIKE '林'
+
+
+10.SELECT *
+FROM  Student
+WHERE  Sname LIKE  '_[勇]%'
+
+
+11.SELECT * 
+
+FROM Course
+
+WHERE Cid AND Cname LIKE '[A002-A004]%'
+
+
+
+12.SELECT * 
+
+FROM Course 
+WHERE Cname LIKE  '_ _[英数机]%'
+
+
+13.SELECT * 
+
+FROM Course
+WHERE Pid LIKE '[^A-Z大]%'
+
+
+
+14.SELECT * 
+
+FROM Course
+WHERE Cid LIKE 'A[_]%'
